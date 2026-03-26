@@ -130,8 +130,17 @@
             justify-content: center;
             color: #64748b;
         }
+        .logo-img {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+        }
+        .footer-logo {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+        }
     </style>
-<base target="_blank">
 </head>
 <body class="bg-slate-50 text-slate-900 antialiased overflow-x-hidden">
 
@@ -140,10 +149,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center gap-2">
-                    <div class="w-10 h-10 bg-brand-600 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-brand-500/30">
-                        J
-                    </div>
-                    <span class="font-display font-bold text-2xl text-slate-900">JubitPro</span>
+                    <!-- JUBITPRO LOGO IN NAV -->
+                    <img src="logo.png" alt="JubitPro" class="logo-img">
                 </div>
                 
                 <div class="hidden md:flex items-center gap-8">
@@ -221,58 +228,24 @@
                 </div>
 
                 <div class="relative lg:pl-12">
-                    <div class="relative bg-white rounded-3xl shadow-2xl p-8 border border-slate-100 animate-float">
-                        <div class="absolute -top-6 -right-6 bg-green-500 text-white px-4 py-2 rounded-full font-bold shadow-lg animate-pulse-slow">
-                            +47% Revenue
+                    <!-- HERO LOGO SHOWCASE -->
+                    <div class="relative bg-slate-900 rounded-3xl shadow-2xl p-8 border border-slate-700 animate-float overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-brand-600/20 to-purple-600/20"></div>
+                        <div class="relative z-10 flex flex-col items-center justify-center min-h-[400px] text-center">
+                            <img src="logo.png" alt="JubitPro Logo" class="w-64 h-auto mb-6 drop-shadow-2xl">
+                            <p class="text-brand-200 text-lg font-medium tracking-wider uppercase">Email Marketing Expert</p>
+                            <div class="mt-8 flex gap-4">
+                                <div class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm">
+                                    <i data-lucide="mail" class="w-4 h-4 inline mr-1"></i> High Converting
+                                </div>
+                                <div class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm">
+                                    <i data-lucide="trending-up" class="w-4 h-4 inline mr-1"></i> Revenue Focused
+                                </div>
+                            </div>
                         </div>
                         
-                        <div class="space-y-6">
-                            <div class="flex items-center justify-between pb-4 border-b border-slate-100">
-                                <div>
-                                    <p class="text-sm text-slate-500">Campaign Revenue</p>
-                                    <p class="text-3xl font-bold text-slate-900">$47,293</p>
-                                </div>
-                                <div class="text-green-500 flex items-center gap-1 font-semibold">
-                                    <i data-lucide="trending-up" class="w-5 h-5"></i>
-                                    +32%
-                                </div>
-                            </div>
-
-                            <div class="space-y-3">
-                                <div class="flex justify-between text-sm">
-                                    <span class="text-slate-600">Open Rate</span>
-                                    <span class="font-bold text-slate-900">68.4%</span>
-                                </div>
-                                <div class="w-full bg-slate-100 rounded-full h-2">
-                                    <div class="bg-brand-600 h-2 rounded-full" style="width: 68%"></div>
-                                </div>
-                            </div>
-
-                            <div class="space-y-3">
-                                <div class="flex justify-between text-sm">
-                                    <span class="text-slate-600">Click Rate</span>
-                                    <span class="font-bold text-slate-900">24.8%</span>
-                                </div>
-                                <div class="w-full bg-slate-100 rounded-full h-2">
-                                    <div class="bg-purple-500 h-2 rounded-full" style="width: 25%"></div>
-                                </div>
-                            </div>
-
-                            <div class="bg-slate-50 rounded-xl p-4 space-y-2">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-8 h-8 bg-brand-100 rounded-full flex items-center justify-center">
-                                        <i data-lucide="mail" class="w-4 h-4 text-brand-600"></i>
-                                    </div>
-                                    <div class="flex-1">
-                                        <p class="text-sm font-semibold text-slate-900">Welcome Sequence Active</p>
-                                        <p class="text-xs text-slate-500">3,247 subscribers enrolled</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <button class="w-full py-3 bg-brand-600 text-white rounded-xl font-semibold hover:bg-brand-700 transition-colors">
-                                View Full Report
-                            </button>
+                        <div class="absolute -top-6 -right-6 bg-green-500 text-white px-4 py-2 rounded-full font-bold shadow-lg animate-pulse-slow">
+                            +47% Revenue
                         </div>
                     </div>
 
@@ -331,7 +304,7 @@
                 <div class="relative reveal">
                     <!-- YOUR PHOTO PLACEHOLDER -->
                     <div class="relative rounded-3xl overflow-hidden shadow-2xl bg-slate-100 aspect-[4/5]">
-                        <img src="your-photo.jpg" alt="JubitPro" class="w-full h-full object-cover">
+                        <!-- Replace this div with your actual image -->
                         <div class="image-placeholder w-full h-full min-h-[500px]">
                             <i data-lucide="user" class="w-24 h-24 mb-4 text-slate-400"></i>
                             <p class="text-lg font-semibold mb-2">Your Photo Here</p>
@@ -400,6 +373,8 @@
     <section id="services" class="py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <!-- LOGO ABOVE SERVICES TITLE -->
+                <img src="logo.png" alt="JubitPro" class="h-16 w-auto mx-auto mb-6 opacity-80">
                 <h2 class="font-display text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
                     Services Built for <span class="gradient-text">Profit</span>
                 </h2>
@@ -534,6 +509,10 @@
 
                 <div class="relative reveal">
                     <div class="bg-slate-900 rounded-3xl p-8 text-white shadow-2xl">
+                        <!-- LOGO IN STATS CARD -->
+                        <div class="flex justify-center mb-6">
+                            <img src="logo.png" alt="JubitPro" class="h-12 w-auto opacity-80">
+                        </div>
                         <div class="grid grid-cols-2 gap-6 mb-8">
                             <div class="text-center p-4 bg-white/10 rounded-2xl">
                                 <p class="text-3xl font-bold text-brand-400">47%</p>
@@ -580,6 +559,8 @@
     <section id="testimonials" class="py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <!-- LOGO ABOVE TESTIMONIALS -->
+                <img src="logo.png" alt="JubitPro" class="h-12 w-auto mx-auto mb-4 opacity-60">
                 <h2 class="font-display text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
                     Results That <span class="gradient-text">Speak</span>
                 </h2>
@@ -646,7 +627,7 @@
                         <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
                         <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
                     </div>
-                    <p class="text-slate-700 mb-6 leading-relaxed">
+                    <p class="text-text-slate-700 mb-6 leading-relaxed">
                         "I went from struggling to fill my coaching program to a waitlist in 90 days. The automated webinar funnel JubitPro built generates high-ticket leads on autopilot. Best investment I've made."
                     </p>
                     <div class="flex items-center gap-4">
@@ -668,6 +649,8 @@
     <section id="pricing" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <!-- LOGO ABOVE PRICING -->
+                <img src="logo.png" alt="JubitPro" class="h-12 w-auto mx-auto mb-4 opacity-60">
                 <h2 class="font-display text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
                     Investment & <span class="gradient-text">ROI</span>
                 </h2>
@@ -766,6 +749,8 @@
         <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
         
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 reveal">
+            <!-- LOGO IN CTA -->
+            <img src="logo.png" alt="JubitPro" class="h-16 w-auto mx-auto mb-6 opacity-90">
             <h2 class="font-display text-4xl lg:text-6xl font-bold text-white mb-6">
                 Ready to Monetize Your List?
             </h2>
@@ -790,6 +775,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-16">
                 <div class="reveal">
+                    <!-- LOGO ABOVE CONTACT TITLE -->
+                    <img src="logo.png" alt="JubitPro" class="h-12 w-auto mb-6 opacity-80">
                     <h2 class="font-display text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
                         Let's Start Your <span class="gradient-text">Revenue Revolution</span>
                     </h2>
@@ -925,12 +912,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div class="col-span-2">
-                    <div class="flex items-center gap-2 mb-4">
-                        <div class="w-10 h-10 bg-brand-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">
-                            J
-                        </div>
-                        <span class="font-display font-bold text-2xl">JubitPro</span>
-                    </div>
+                    <!-- LOGO IN FOOTER -->
+                    <img src="logo.png" alt="JubitPro" class="footer-logo mb-4 brightness-200">
                     <p class="text-slate-400 max-w-sm">
                         Transforming email lists into revenue machines for affiliate marketers, ecommerce brands, and coaches worldwide.
                     </p>
